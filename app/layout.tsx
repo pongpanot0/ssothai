@@ -20,8 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <AuthProvider>
-          <Navbar />
-          <main className="relative overflow-hidden">{children}</main>
+          <Navbar>
+            <main className="relative overflow-hidden">{children}</main>
+          </Navbar>
           <Footer />
         </AuthProvider>
       </body>

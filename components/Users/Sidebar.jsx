@@ -1,37 +1,65 @@
-import React from "react";
-import { FaAngleDown } from "react-icons/fa";
+import Link from "next/link";
+import React, { useState } from "react";
 
-const Sidebar = ({ children }) => {
+function SideNavbar({ children }) {
+  const [open, setOpen] = useState(true);
+  const Menus = [
+    { title: "Dashboard", src: "Chart_fill",path:"/user/dashboard" },
+    { title: "Dashboard", src: "Chat" ,path:"/user/dashboard"},
+  ];
+
   return (
-    <aside className="h-screen">
-      <nav className="h-full flex flex-col bg-white border-r shadow-sm">
-        <div className="p-4 pb-2 flex justify-between items-center">
+    <div className="flex">
+      <div
+        className={` ${
+          open ? "w-72" : "w-20 "
+        } bg-dark-purple h-screen p-5  pt-8 relative duration-300 bg-[#FF9900]`}
+      >
+        <img
+          src="/control.png"
+          className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
+           border-2 rounded-full  ${!open && "rotate-180"}`}
+          onClick={() => setOpen(!open)}
+        />
+        <div className="flex gap-x-4 items-center">
           <img
-            src="https://img.logoipsum.com/243.svg"
-            className="w-32"
-            alt=""
+            src="/logo.png"
+            className={`cursor-pointer duration-500 ${
+              open && "rotate-[360deg]"
+            }`}
           />
-          <button className="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-500">
-            <FaAngleDown />
-          </button>
+          <h1
+            className={`text-white origin-left font-medium text-xl duration-200 ${
+              !open && "scale-0"
+            }`}
+          >
+            SSOTHAI
+          </h1>
         </div>
-        <ul className="flex-1 px-3">{children}</ul>
-        <div className="border-t flex p-3">
-          <img
-            src="https://ui-avatars.com/api/?background=c7d2fe&color=3730a3&bold=true"
-            className="w-10 h-10 rounded-md"
-            alt=""
-          />
-        <div className={`flex justify-between items-center w-52 ml-3`}>
-          <div className="leading-4">
-            <h4 className="font-semibold">jogn doe</h4>
-            <span className="text-xs text-gray-600">Johndoe@gmail.com</span>
-          </div>
-        </div>
-        </div>
-      </nav>
-    </aside>
+        <ul className="pt-6">
+          {Menus.map((Menu, index) => (
+            <Link href={Menu.path}>
+              <li
+                key={index}
+                className={`flex  rounded-md p-2 cursor-pointer hover:scale-110 text-black text-sm items-center gap-x-4 
+              ${Menu.gap ? "mt-9" : "mt-2"} ${
+                  index === 0 && "bg-light-white"
+                } `}
+              >
+                <img src={`/${Menu.src}.png`} />
+                <span
+                  className={`${!open && "hidden"} origin-left duration-200`}
+                >
+                  {Menu.title}
+                </span>
+              </li>
+            </Link>
+          ))}
+        </ul>
+      </div>
+      <div className="h-full flex-1 p-7">{children}</div>
+    </div>
   );
-};
+}
 
-export default Sidebar;
+export default SideNavbar;

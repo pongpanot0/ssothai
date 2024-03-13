@@ -8,9 +8,8 @@ export default function Home() {
   const { data } = useSession();
   return (
     <>
-      {JSON.stringify(data)}
       <Hero />
-      {/*       <News /> */}
+
       <Activitynews />
     </>
   );
