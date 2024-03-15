@@ -89,13 +89,13 @@ const Payment = () => {
           </div>
           <div className="col-span-2 p-5">
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               htmlFor="file_input"
             >
               เมื่อโอนเงินเรียบร้อยแล้ว อัพโหลดสลิป
             </label>
             <input
-              class="block w-full text-sm text-black border border-gray-300 rounded-lg cursor-pointer bg-gray-100 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+              className="block w-full text-sm text-black border border-gray-300 rounded-lg cursor-pointer bg-gray-100 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
               id="file_input"
               type="file"
             />
@@ -103,7 +103,7 @@ const Payment = () => {
         </div>
       </div>
       <div className="col-span-2 mt-3">
-        <button className=" bg-[#FF9900] w-full p-2 text-white rounded-lg hover:bg-orange-500 ">
+        <button className=" bg-[#77A8D8] w-full p-2 text-white rounded-lg hover:bg-[#295F93] ">
           ดำเนินการต่อ{" "}
         </button>
       </div>

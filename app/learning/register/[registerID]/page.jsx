@@ -22,7 +22,7 @@ function RegisterLerning({ params }) {
         <div className="grid grid-cols-6 xs:grid-cols-1 md:grid-cols-6">
           <div className="col-span-1">
             {" "}
-            <img src="/0316-1.jpg" alt="" className="w-40 h-auto" />
+            <img src="0316-1.jpg" alt="" className="w-40 h-auto" />
           </div>
           <div className="col-span-4">
             {" "}
@@ -140,8 +140,8 @@ function RegisterLerning({ params }) {
               <div className="col-span-4 mt-2">
                 <Link href={`/learning/payment/${params.registerID}`}>
                   <button
-                    className="bg-[#FF9900] w-full m-3 rounded-lg h-auto text-white 
-                hover:bg-orange-700
+                    className="bg-[#77A8D8] w-full m-3 rounded-lg h-auto text-white 
+                hover:bg-[#295F93]
                 py-2"
                   >
                     เข้าสู่หน้าชำระเงิน

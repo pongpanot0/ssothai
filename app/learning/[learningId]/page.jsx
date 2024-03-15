@@ -47,7 +47,7 @@ sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-12 sm:ml-1 sm:mr-1 lg:ml-5 lg:mr-5"
               <div className="col-span-2">
                 <img
                   className="h-full w-full rounded-t-lg object-cover md:h-full md:w-full md:rounded-none md:rounded-l-lg"
-                  src="/0316-1.jpg"
+                  src="0316-1.jpg"
                   alt=""
                 />
               </div>

@@ -12,7 +12,7 @@ const DetailCourse = () => {
             <div className="grid">
               <h2 className="text-[24px] text-gray-800">Course Name</h2>
               <h2 className="text-[20px] text-gray-400">Author</h2>
-              <h2 className="text-[18px] text-gray-600 mt-2">
+              <h2 className="text-[16px] text-gray-600 mt-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
                 cupiditate omnis qui nulla eaque aliquam totam tempora non optio
                 eveniet nemo mollitia quae impedit vero consequuntur
@@ -25,7 +25,7 @@ const DetailCourse = () => {
               <h2 className="text-[24px] text-gray-700 text-center align-middle">
                 30 สิงหาคม 2566
               </h2>
-              <button className="bg-orange-500 text-white w-full rounded-3xl mt-2  p-2">
+              <button className="bg-[#77A8D8] text-white w-full rounded-3xl mt-2 hover:scale-105 hover:bg-[#295F93]  p-2">
                 ลงทะเบียน
               </button>
             </div>
@@ -35,7 +35,7 @@ const DetailCourse = () => {
         <div className="col-span-2">
           <div className="gird  h-full px-3">
             <h2 className="text-[24px] ">Descitions</h2>
-            <h2 className="text-[18px] mt-2">
+            <h2 className="text-[16px] mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               ipsam aliquid officia similique totam consectetur veniam vitae
               dolor enim vel! Vel, voluptatibus culpa impedit fugiat officia
@@ -52,8 +52,7 @@ const DetailCourse = () => {
         </div>
         <div className="col-span-2">
           <div className="grid">
-           
-            <div class="flex flex-col items-center gap-4">
+            <div className="flex flex-col items-center gap-4">
               <div className="relative my-4">
                 <div className="absolute -inset-2">
                   <div className="w-28 h-full max-w-sm mx-auto lg:mx-0 opacity-70 blur-lg bg-gradient-to-r "></div>

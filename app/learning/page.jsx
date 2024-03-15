@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { BiBook } from "react-icons/bi";
-import { BsPerson } from "react-icons/bs";
+
 const courses = [
   {
     id: 1,
     name: "Courses1",
     banner: {
-      url: "/img_block_1HNY.png",
+      url: "img_block_1HNY.png",
     },
     author: "pongpanot",
     wait: 50,
@@ -20,7 +19,7 @@ const courses = [
     id: 2,
     name: "Courses2",
     banner: {
-      url: "/img_block_1HNY.png",
+      url: "img_block_1HNY.png",
     },
     author: "pongpanot",
     wait: 50,
@@ -32,7 +31,7 @@ const courses = [
     id: 3,
     name: "Courses3",
     banner: {
-      url: "/img_block_1HNY.png",
+      url: "img_block_1HNY.png",
     },
     author: "pongpanot",
     wait: 50,
@@ -44,7 +43,7 @@ const courses = [
     id: 4,
     name: "Courses3",
     banner: {
-      url: "/img_block_1HNY.png",
+      url: "img_block_1HNY.png",
     },
     author: "pongpanot",
     wait: 50,

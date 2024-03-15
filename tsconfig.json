@@ -36,7 +36,7 @@
     "app/login/page.jsx",
     "app/api/signin/route.js",
     "build/types/**/*.ts"
-, "app/api/auth/[...nextauth]/route.jsx", "app/layout.tsx", "components/Navbar.jsx"  ],
+, "app/api/auth/[...nextauth]/route.jsx", "app/layout.tsx", "components/Navbar.jsx", "app/api/news/route.js"  ],
   "exclude": [
     "node_modules"
   ]

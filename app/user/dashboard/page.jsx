@@ -36,12 +36,18 @@ const Dashboard = () => {
   return (
     <div className="p-1">
       <div className="grid grid-cols-4 gap-3">
-        {course.map((res) => {
+        {course.map((res, index) => {
           return (
-            <div className="col-span-1">
+            <div key={index} className="col-span-1">
               <div className="grid grid-cols-1   border border-gray-300 rounded-xl p-2">
                 {" "}
-                <Image src={res.img} width={1000} height={500}  className="rounded-xl" alt="" />
+                <Image
+                  src={res.img}
+                  width={1000}
+                  height={500}
+                  className="rounded-xl"
+                  alt=""
+                />
                 <div>
                   <h2 className="text-[20px] text-gray-800 px-2">
                     หลักสูตร : {res.name}
@@ -60,9 +66,10 @@ const Dashboard = () => {
                       : ""}
                   </h2>
                   <Link href={`/user/course/${res.id}`}>
-                  <button className="bg-orange-500 text-white rounded-md w-full hover:bg-orange-700" >ดูรายละเอียด</button>
+                    <button className="bg-[#77A8D8] text-white rounded-md w-full hover:bg-[#295F93]">
+                      ดูรายละเอียด
+                    </button>
                   </Link>
-                  
                 </div>
               </div>
             </div>

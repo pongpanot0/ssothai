@@ -4,8 +4,8 @@ import React, { useState } from "react";
 function SideNavbar({ children }) {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "Chart_fill",path:"/user/dashboard" },
-    { title: "Dashboard", src: "Chat" ,path:"/user/dashboard"},
+    { title: "Dashboard", src: "Chart_fill", path: "/user/dashboard" },
+    { title: "Dashboard", src: "Chat", path: "/user/dashboard" },
   ];
 
   return (

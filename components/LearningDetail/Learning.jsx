@@ -54,16 +54,16 @@ const Learning = ({ id }) => {
         <div className="col-span-1 mx-auto   max-w-5xl px-5 sm:px-6 lg:px-5 gap-5">
           <Slider {...settings}>
             <div className="px-1">
-              <img src="/0316-1.jpg" alt="" />
+              <img src="0316-1.jpg" alt="" />
             </div>
             <div className="px-1">
-              <img src="/0316-1.jpg" alt="" />
+              <img src="0316-1.jpg" alt="" />
             </div>
             <div className="px-1">
-              <img src="/0316-1.jpg" alt="" />
+              <img src="0316-1.jpg" alt="" />
             </div>
             <div className="px-1">
-              <img src="/0316-1.jpg" alt="" />
+              <img src="0316-1.jpg" alt="" />
             </div>
           </Slider>
         </div>

@@ -36,7 +36,7 @@ const Hero = () => {
         <img
           alt="Map"
           className="transition duration-300 ease-in-out hover:scale-110"
-          src="/img_block_1HNY.png"
+          src="img_block_1HNY.png"
         />
       </div>
     </section>

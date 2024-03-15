@@ -12,9 +12,9 @@ const LoginPage = () => {
       username: userName.current,
       password: pass.current,
       redirect: true,
-      callbackUrl: "/user/dashboard",
+      callbackUrl: "/admin/dashboard",
     });
-    
+    console.log(result);
   };
   return (
     <section className=" min-h-screen flex items-center justify-center">

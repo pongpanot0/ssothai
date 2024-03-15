@@ -42,6 +42,9 @@ nav {
   .btn_dark_green_outline  { 
     @apply border-gray-20 bg-green-90 px-8 py-5 text-white
   }
+  .primary{
+    @apply bg-[#77A8D8] hover:bg-[#295F93] text-white
+  }
   .max-container2 {
     @apply mx-auto max-w-[100%];
   }

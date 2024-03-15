@@ -10,7 +10,7 @@ const Footer = () => {
   const user = router.split("/")[1];
   return (
     <>
-      {user === "user" ? (
+      {user === "user" || user == "admin" ? (
         <div></div>
       ) : (
         <div>

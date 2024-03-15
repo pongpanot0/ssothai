@@ -5,6 +5,7 @@ import Link from "next/link";
 import Button from "./Button";
 import LoginButton from "@/app/LoginButton";
 import Sidebar, { SidebarItem } from "./Users/Sidebar";
+import SideNavbarAdmin from "./Admin/SideNavbarAdmin";
 import { usePathname } from "next/navigation"; // Import useRouter hook
 import { FaAddressBook } from "react-icons/fa";
 const Navbar = ({ children }) => {
@@ -16,15 +17,16 @@ const Navbar = ({ children }) => {
     <>
       {user === "user" ? (
         <Sidebar children={children} />
+      ) : user === "admin" ? (
+        <SideNavbarAdmin children={children} />
       ) : (
         <>
-          <nav
-            style={{ background: "#FF9900" }}
-            className="max-container2 flexBetween padding-container relative z-30 w-full py-5"
-          >
-            <Link href="/"></Link>
+          <nav className="max-container2 bg-gradient-to-l from-[#77A8D8]  to-[#295F93] flexBetween padding-container relative z-30 w-full">
+            <Link href="/">
+              <img src="/LOGO-FINAL.png" className="w-28" alt="" />
+            </Link>
 
-            <ul className="hidden h-full gap-28 lg:flex">
+            <ul className="hidden h-full gap-10 lg:flex">
               {NAV_LINKS.map((link) => (
                 <Link
                   href={link.href}

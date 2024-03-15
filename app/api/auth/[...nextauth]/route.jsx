@@ -10,8 +10,9 @@ const handler = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials, req) {
+        
         // Add logic here to look up the user from the credentials supplied
-        const res = await fetch("http://localhost:3000/api/signin", {
+        const res = await fetch("https://mcon-oil.mconcrete.co.th/sso_uat/api/signin", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
